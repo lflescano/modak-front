@@ -1,0 +1,71 @@
+@import '../../../assets/styles/fonts';
+@import '../../../assets/styles/variables';
+
+.base-header-container{
+    display: flex;
+    height: 80px;
+    min-height: 80px;
+    align-items: center;
+    padding: 0 43px;
+    position: relative;
+    width: 100%;
+
+    .base-header-title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 30%;
+        .dropdown{
+            margin-right: 32px;
+        }
+    }
+    .base-header-counter {
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        text-align: center;
+    }
+    .base-header-user{
+        display: flex;
+        width: 30%;
+        justify-content: flex-end;
+    }
+    .base-header-actions{
+        display: flex;
+        div{
+            color: #022040;
+            margin-left: 20px;
+        }
+        .base-header-actions-notifications{
+            position: relative;
+
+            .base-header-actions-notifications-number{
+                background-color: #1F3BA3;
+                color: #FFFFFF;
+                border-radius: 50%;
+                padding: 2px 6px 1px;
+                font-weight: bold;
+                position: absolute;
+                right: -2px;
+                top: -4px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+@media (max-height: $mobile-height) and (max-width: $mobile-width) {
+    .base-header-container{
+        display: flex;
+        height: 98px;
+        align-items: center;
+        padding: 0 16px;
+        position: relative;
+        width: 100%;
+        .base-header-logo{
+            position: relative;
+            left: auto;
+        }
+    }
+}

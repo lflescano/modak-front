@@ -1,0 +1,70 @@
+@import '../../../assets/styles/fonts';
+@import '../../../assets/styles/variables';
+
+.login-header-container{
+    display: flex;
+    height: 125px;
+    align-items: center;
+    padding: 0 43px;
+    position: relative;
+    justify-content: center;
+
+    .login-header-logo{
+        margin-left: 24px;
+        font-size: 2em;
+        font-style: italic;
+        font-weight: 600;
+    }
+
+    .login-header-title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .login-header-title-text{
+            color: #F9F9FC;
+            font-family: MyriadPro;
+            font-weight: bold;
+            font-size: 28px;
+        }
+        .login-header-title-line{
+            height: 3px;
+            background: #FFFFFF;
+            width: 70%;
+        }
+    }
+    .login-header-contact-info{
+        display: flex;
+        position: absolute;
+        right: 43px;
+        .login-header-contact-info-item{
+            color: #FFFFFF;
+            font-family: MyriadPro;
+            margin-left: 20px;
+            .login-header-contact-info-item-title{
+                font-size: 17px;
+            }
+            .login-header-contact-info-item-number{
+                font-size: 25px;
+            }
+
+        }
+    }
+}
+
+
+@media (max-height: $mobile-height) and (max-width: $mobile-width) {
+    .login-header-container{
+        display: flex;
+        height: 98px;
+        align-items: center;
+        padding: 0 43px;
+        position: relative;
+        justify-content: center;
+        width: 100%;
+        .login-header-logo{
+            position: relative;
+            left: auto;
+        }
+    }
+}
